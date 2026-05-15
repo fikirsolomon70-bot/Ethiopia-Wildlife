@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fikir HTML assignment</title>
+
+    <style> 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    background-image: url("image1.avif");
+    background-size: cover;        
+    background-repeat: no-repeat;  
+    background-position: center;   
+    min-height: 100vh;                 
+}
+
+/* HEADER FIXED */
+header {
+    display: flex;                      
+    /* puts Blaze Studio left & menu right */
+    justify-content: space-between;     
+    /* spaces them apart */
+    align-items: center;                
+    /* centered vertically */
+    padding: 20px 40px;
+}
+
+/* LOGO */
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGATION MENU FIXED */
+.menu{
+    display:flex;       /* puts links in one row */
+    gap:40px;           /* spacing between links */
+    font-size: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #040516;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu a:hover{
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+
+/* MAIN CONTENT BOX */
+.con{
+    background: rgba(255,255,255,0.6);
+    box-shadow: 2px 8px 10px rgb(191, 197, 193);
+    border-radius: 10px;
+
+    margin: 40px;
+    padding: 25px;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;     /* title on top, paragraph under */
+    align-items: flex-start;    /* left side */
+    text-align: left;
+}
+
+.con h1{ 
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.con p{
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Blaze Studio</h2>
+
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="Classify.html">Classify</a>
+            <a href="page 3.html">Aim</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="con">
+            <h1>DISCOVER <br>ABYSSINIA'S<br>WILDLIFE</h1>
+
+            <p>
+                Welcome to our Abyssinian Wildlife Center. Here, you will explore the incredible diversity of Ethiopia’s
+                unique flora and fauna, including rare and endemic species. <br><br>
+                From the majestic Ethiopian wolf to the striking Gelada baboon, our site provides information
+                about habitats, conservation efforts, and the importance of protecting this natural heritage. <br><br>
+                Whether you are a student, researcher, or wildlife enthusiast, immerse yourself in the wonders
+                of Abyssinia’s wildlife and learn how to contribute to its preservation.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
